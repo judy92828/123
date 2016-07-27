@@ -1,0 +1,321 @@
+/*广告位*/
+.advertising{
+    height:auto;
+    margin-top:10px;
+    /*background-color:#e4e7e4;*/
+}
+.advertising>img{
+    width:100%;
+    height:auto;
+    margin-bottom:-4px;
+}
+
+.content{
+    width:100%;
+    margin-top:10px;
+    height:auto;
+    margin-bottom:20px;
+    /*overflow: hidden;*/
+}
+.content .contentLeft{
+    float: left;
+    width:68%;
+    display: block;
+    overflow: hidden;
+}
+.content .contentLefts{border-left:1px solid #dde1dc;height: 375px;
+    border-right:1px solid #dde1dc;}
+
+.adlet{
+    height:25px;
+    font-size: 14px;
+    text-indent:5px;
+    padding: 0px 5px;
+    /*float: left;*/
+}
+
+.adlet a{color:#666;}
+
+.carousel{
+    width:100%;
+}
+
+/*轮播图*/
+div.slideBox{ position:relative; width:100%; height:345px;overflow:hidden;}
+div.slideBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0; margin:0;}
+div.slideBox ul.items li{ float:left; background:none; list-style:none; padding:0; margin:0;}
+div.slideBox ul.items li a{ float:left; line-height:normal !important; padding:0 !important; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox ul.items li a img{width:100% !important;height:345px; margin:0 !important; padding:0 !important; display:block; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox div.tips{ position:absolute; bottom:0; width:100%; height:40px; background-color:#000; overflow:hidden;}
+div.slideBox div.tips div.title{ position:absolute; left:10px; top:0; height:100%;}
+div.slideBox div.tips div.title a{ color:#FFF; font-size:18px; line-height:40px; margin-left:10px; text-decoration:none;}
+div.slideBox div.tips div.title a:hover{ text-decoration:none !important;}
+div.slideBox div.tips div.nums{ position:absolute; right:0; top:0; height:100%;}
+div.slideBox div.tips div.nums a{ display:inline-block; >float:left/*For IE.ADD.JENA.201206300844*/; width:10px; height:10px; background:url("../img/point.png") no-repeat;background-size: 100%; text-indent:-99999px; margin:15px 15px 0px 0px;}
+div.slideBox div.tips div.nums a.active{ background:url("../img/point-blue.png") no-repeat;background-size: 100%;}
+
+.article{
+    width:100%;
+    border-top:1px solid #8f8d8d;
+}
+.articleTitle{
+    width:100%;
+    margin-bottom: 10px;
+    height:40px;
+}
+.articleTitle>span{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    letter-spacing: 1px;
+    margin-top:-2px;
+    border-top:2px solid #32a6de;
+    font-size:24px;
+    color:#3190bd;
+}
+.articleTitle>i{
+    font-style: normal;
+    color:#5d5a59;
+    font-size:18px;
+}
+.articleTitle>a{
+    display:block;
+    float:right;
+    font-size:12px;
+    height:40px;
+    line-height:40px;
+    cursor: pointer;
+    color:#222;
+}
+.articleContent{
+    width:100%;
+    margin: 13.5px 0px;
+}
+
+.articleContent>.pic{
+    float:left;
+    width:35%;
+	height:144px;
+    margin-right:1.8%;
+}
+.articleContent>.pic>img{
+    width:100%;
+	height:144px;
+}
+.words{
+    width:63%;
+    float:right;
+	height:144px;
+    overflow: hidden;
+}
+.words>p{
+	margin-bottom:10px;
+	}
+.words>p>a{
+    color:#33a7df;
+    font-size:20px;
+    line-height:18px;
+    margin-bottom:10px;
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.words>p.details{
+    font-size:12px;
+    color:#222;
+    line-height: 2;
+    text-indent: 2em;
+}
+.words>p.details>a{
+    font-size:14px;
+	color:#464445;
+}
+.otherBox{
+    width:100%;
+    margin:1px 0px;
+    display: block;
+    overflow: hidden;
+}
+.others{
+    width:100%;
+    /*height:34px;*/
+}
+.others>a{
+    display: inline-block;
+    width:46%;
+    height:34px;
+    line-height:34px;
+    font-size:16px;
+    color:#33a7df;
+    background:url("../img/pen.png") no-repeat;
+    background-position: 0px 9px;
+    background-size:14px;
+    text-indent: 16px;
+    cursor: pointer;
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.others>a.left{
+    margin-right:2.5%;
+}
+
+.commend{
+    width:100%;
+}
+.commend>p{
+    color:#32a6de;
+    font-size:20px;
+    letter-spacing: 1px;
+    margin-bottom:5px;
+}
+/*.commend>.others{*/
+    /*margin-top:-10px;*/
+    /*height:30px;*/
+/*}*/
+.commend>.others>a{
+    height:30px;
+}
+.commend>.others>a{
+    width:100%;
+    font-size: 16px;
+    background-position: 0px 8px;
+}
+.border{
+    width:96.5%;
+    padding:1% 1.6% 0px;
+    border:1px solid #32a6de;
+}
+.border>a{
+    float:right;
+    font-size:14px;
+    color:#555251;
+}
+.physician{
+    width:100%;
+    margin-top:2px;
+}
+.physician>li{
+    float:left;
+    position:relative;
+    width:24%;
+    margin-right:1%;
+}
+.physician>li>a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.physician>li>a>img{
+    width:100%;
+}
+.physician>li>a>div.videoTitle{
+    height:24px;
+    line-height:24px;
+    text-indent: 10px;
+    font-size:12px;
+}
+.content>.wide{
+    width:97.8%;
+    padding:1%;
+}
+.interview{
+    width:100%;
+}
+.interview>li{
+    float:left;
+    width:49%;
+    margin-right:1%;
+}
+.interview>li>a>.left{
+    float:left;
+    width:51%;
+}
+.interview>li>.right{
+    width:47%;
+    height:180px;
+    overflow: hidden;
+}
+.interview>li>.right p{
+    font-size: 18px;
+    margin-bottom:5px;
+    color:#32a6de;
+}
+
+.interview>li>.right p.details{
+    font-size:12px;
+    margin-bottom:0;
+    color:#222;
+    line-height: 2;
+    text-indent: 2em;
+}
+.health{
+    width:100%;
+}
+.health>.left{
+    width:46%;
+    float: left;
+    padding:15px 15px 10px 0;
+    border-right:2px dashed #999999;
+}
+.description>p>b.long{
+    width:100%;
+}
+.vertical{
+    width:4.8%;
+    text-align:center;
+    overflow: hidden;
+}
+.healthArticle{
+	display:block;
+    float:right;
+    width:49.2%;
+}
+.healthArticle>.others{
+    height:auto!important;
+    margin-bottom:8px;
+    overflow: hidden;
+}
+.healthArticle>.others>a{
+    width:100%;
+}
+.healthArticle>.others>p.details{
+    font-size:12px;
+	color:#222222;
+     height:66px;
+    line-height:2;
+    text-indent:22px;
+}
+
+.activity{
+    width:270px;
+    height:auto;
+    margin:0 auto;
+}
+.activity>li{
+    width:270px;
+    height:57px;
+    margin-bottom:8.5px;
+}
+.activity>li>a{
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+    line-height:57px;
+    text-align: center;
+    color:#32a6de;
+    font-size: 18px;
+    background:url("../img/activity.png") no-repeat;
+    background-size: 100%;
+}
+.activity>li>a>img.triangle{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+}
+.activity>li>a>img{
+    width:100%;
+}

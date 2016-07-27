@@ -1,0 +1,259 @@
+<?php 
+/**
+	菜单项
+	一级数组的键值是一级菜单
+	二级数组的键值是二级菜单
+	ico是一级菜单的图标，图标用bootstrap
+**/
+
+	return [
+
+		'menus' => [
+			'0' => [
+				'name'=>'管理员管理',
+				'controller'=>'UsersController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'管理员列表',
+						'url'=>'/admin/userslist',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加管理员',
+						'url'=>'/admin/userslist/create',
+						'action'=>'create'
+					]
+				]
+			],
+
+			'1' => [
+				'name'=>'视频管理',
+				'controller'=>'VideoController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'视频列表',
+						'url'=>'/admin/video/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加视频',
+						'url'=>'/admin/video/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'待审核',
+						'url'=>'/admin/video/statusList/3',
+						'action'=>'statusList',
+						'state'=>'3'
+					],
+					'3'=>[
+						'name'=>'待发布',
+						'url'=>'/admin/video/statusList/1',
+						'action'=>'statusList',
+						'state'=>'1'
+					],
+					'4'=>[
+						'name'=>'已发布',
+						'url'=>'/admin/video/statusList/2',
+						'action'=>'statusList',
+						'state'=>'2'
+					],
+					'5'=>[
+						'name'=>'推荐视频',
+						'url'=>'/admin/video/recommendList',
+						'action'=>'recommendList'
+					]
+				]
+			],
+
+			'2' => [
+				'name'=>'文章管理',
+				'controller'=>'ArticleController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'文章列表',
+						'url'=>'/admin/article/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加文章',
+						'url'=>'/admin/article/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'待审核',
+						'url'=>'/admin/article/statusList/3',
+						'action'=>'statusList',
+						'state'=>'3'
+					],
+					'3'=>[
+						'name'=>'待发布',
+						'url'=>'/admin/article/statusList/1',
+						'action'=>'statusList',
+						'state'=>'1'
+					],
+					'4'=>[
+						'name'=>'已发布',
+						'url'=>'/admin/article/statusList/2',
+						'action'=>'statusList',
+						'state'=>'2'
+					]
+				]
+			],
+
+			'3' => [
+				'name'=>'分类管理',
+				'controller'=>'CategoryController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'分类列表',
+						'url'=>'/admin/category/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加分类',
+						'url'=>'/admin/category/create',
+						'action'=>'create'
+					],
+				]
+			],
+
+			'4' => [
+				'name'=>'广告位管理',
+				'controller'=>'AdpositionController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'广告位列表',
+						'url'=>'/admin/adposition/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加广告位',
+						'url'=>'/admin/adposition/create',
+						'action'=>'create'
+					],
+				]
+			],
+
+			'5' => [
+				'name'=>'广告管理',
+				'controller'=>'AdvertController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'广告列表',
+						'url'=>'/admin/advert/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加广告',
+						'url'=>'/admin/advert/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'待审核',
+						'url'=>'/admin/advert/audit',
+						'action'=>'audit',
+					],
+					'3'=>[
+						'name'=>'待发布',
+						'url'=>'/admin/advert/publish',
+						'action'=>'publish',
+					],
+					'4'=>[
+						'name'=>'已发布',
+						'url'=>'/admin/advert/published',
+						'action'=>'published',
+					]
+				]
+			],
+
+			'6' => [
+				'name'=>'幻灯片管理',
+				'controller'=>'SlideController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'幻灯片列表',
+						'url'=>'/admin/slide/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加幻灯片',
+						'url'=>'/admin/slide/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'待审核',
+						'url'=>'/admin/slide/pendingaudit',
+						'action'=>'audit',
+					],
+					'3'=>[
+						'name'=>'待发布',
+						'url'=>'/admin/slide/pendingrelease',
+						'action'=>'pendingrelease',
+					],
+					'4'=>[
+						'name'=>'已发布',
+						'url'=>'/admin/slide/released',
+						'action'=>'released',
+					]
+				]
+			],
+
+			'7' => [
+				'name'=>'友情链接 | 地方频道',
+				'controller'=>'LinksController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'信息列表',
+						'url'=>'/admin/links/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加信息',
+						'url'=>'/admin/links/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'发布管理',
+						'url'=>'/admin/links/pendingaudit',
+						'action'=>'audit',
+					]
+				]
+
+			],
+
+			'8' => [
+				'name'=>'合作机构',
+				'controller'=>'AgencyController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'合作机构列表',
+						'url'=>'/admin/agency/',
+						'action'=>'index'
+					],
+					'1'=>[
+						'name'=>'添加合作机构',
+						'url'=>'/admin/agency/create',
+						'action'=>'create'
+					],
+					'2'=>[
+						'name'=>'机构发布管理',
+						'url'=>'/admin/agency/pendingaudit',
+						'action'=>'audit',
+					]
+				]
+			],
+
+			'9' => [
+				'name'=>'系统设置',
+				'controller'=>'SystemController',
+				'menues'=>[
+					'0'=>[
+						'name'=>'系统信息管理',
+						'url'=>'/admin/system/',
+						'action'=>'index'
+					],
+				]
+			],
+		],
+	];

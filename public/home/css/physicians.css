@@ -1,0 +1,138 @@
+.physician-list{
+    margin-left: -10px;
+}
+
+.physician-list>li{
+    width:190px;
+    margin-left: 12px;
+    float:left;
+    margin-bottom:20px;
+}
+
+.physician-list>li .photo{
+    position:relative;
+    width:100%;
+    font-size: 0;
+}
+.photo img{
+    width:191px;
+    height:121px;
+}
+.photo>.photo-tip{
+    position:absolute;
+    bottom:0px;
+    left:0;
+    text-indent: 5px;
+    width:100%;
+    height:20px;
+    line-height:20px;
+    font-size:12px;
+    color:rgba(254,254,254,.8);
+    cursor: pointer;
+    background-color: rgba(57,57,57,.7);
+}
+.photo>.photo-tip>span{
+    display:inline-block;
+    float:right;
+    cursor: pointer;
+}
+.physician-list>li .text>p{
+    color:#1074a5;
+    font-size: 14px;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.health-interview{
+    margin-left: -10px;
+    margin-bottom:25px;
+}
+.health-interview>.interview{
+    width:330px;
+    float:left;
+    margin-left:15px;
+    margin-bottom:10px;
+}
+.health-interview>.interview>.video{
+    width:330px;
+    height:184px;
+}
+.interview-words{
+    font-size:12px;
+    color:#222;
+    margin-top: 15px;
+    line-height: 2;
+    text-indent: 2em;
+    height:50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+.experts>li{
+    width:218px;
+    margin-left: 12px;
+    margin-right: 0px;
+    float:left;
+    margin-bottom:15px;
+}
+.experts>li .photo img{
+    width:219px;
+    height:140px;
+}
+.experts .photo>.photo-tip{
+    text-align:center;
+    text-indent: 0;
+    color:#FFFFFF;
+}
+.experts .details{
+    margin-top:15px;
+    padding: 0 5px;
+    font-size:12px;
+    line-height: 2;
+    color:#222222;
+    max-height:70px;
+    text-indent: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mien>li{
+    margin-right:28px;
+    margin-bottom:30px;
+}
+
+.hidden{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top:5px;
+}
+
+.high{
+    width:100%;
+    margin-bottom:25px;
+}
+.high>.interview{
+    width:320px;
+    float:left;
+    margin-right:5px;
+    margin-bottom:40px;
+}
+.high>.interview .video{
+    width:320px;
+    height:205px;
+}
+.high>.interview .video>img{
+    width:320px;
+    height:205px;
+}
+.high>.interview .video>img.play{
+    width:35px;
+    height:35px;
+    top:43%;
+}
+.high>.interview .video>.videoTitle{
+    bottom:0;
+}
